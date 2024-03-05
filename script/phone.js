@@ -15,7 +15,7 @@ const displayPhone = phones => {
   // step-1: GET ID
   const phoneContainer = document.getElementById('phone_container');
   phones.forEach(phone => {
-    console.log(phone);
+    // console.log(phone);
 
     // step-2: create a div
     const phoneCard = document.createElement('div');
@@ -36,6 +36,14 @@ const displayPhone = phones => {
     // step-4: append child
     phoneContainer.appendChild(phoneCard);
   });
+};
+
+// handle Search button
+const handleSearch = () => {
+  // console.log('handle search');
+  const searchField = document.getElementById('search-field');
+  const searchText = searchField.value;
+  console.log(searchText);
 };
 
 loadPhone();
